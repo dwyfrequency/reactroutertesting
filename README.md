@@ -4,6 +4,7 @@ Good things to look into
 2. Render Props
 3. New Context API for React
 4. Advanced State Management Libraries like Redux and Mobx
+5. Portals and Error Boundaries
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
