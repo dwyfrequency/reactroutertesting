@@ -24,6 +24,8 @@ export default function Topics(props) {
 
       <hr />
       <Route path="/topics/rendering" component={Topic} />
+      <Route path="/topics/components" component={Topic} />
+      <Route path="/topics/props-v-state" component={Topic} />
     </div>
   );
 }
