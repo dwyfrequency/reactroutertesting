@@ -30,12 +30,8 @@ export default function Topics({ match }) {
       {/* This is dynamic rendering. We are also using nested routes below. Routes are just components */}
       {/* when you are building nested route components use match.path - (difference between url, the path allows us to use dynamic routes)  */}
       <Route path={`${match.path}/:topicId`} component={Topic} />
-      {/* this is how we pass a prop */}
-      {/* <Route path={`${match.path}/:topicId`} component={() => {
-          return <Topic name="tyler" />;
-        }}
-      /> */}
-      {/* if we do not want to create an entire component, we can use an annomous func */}
+      {/* this is how we pass a prop to react router, use the render key word 
+      if we do not want to create an entire component, we can use an annomous func */}
       <Route
         exact
         path={match.url}

@@ -1,3 +1,10 @@
+Good things to look into
+
+1. High Order Components
+2. Render Props
+3. New Context API for React
+4. Advanced State Management Libraries like Redux and Mobx
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
