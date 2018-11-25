@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
 
-// stop time: 1:08:58
-function Topic(props) {
-  return <div>Topic</div>;
+// stop time:
+function Topic({ match }) {
+  return <div>{match.params.topicId}</div>;
 }
 
 export default function Topics(props) {
@@ -12,6 +12,7 @@ export default function Topics(props) {
       <h2>Topics</h2>
       <ul>
         <li>
+          {/* to says where to link to when clicked */}
           <Link to="/topics/rendering">Rendering with React</Link>
         </li>
         <li>
@@ -23,9 +24,7 @@ export default function Topics(props) {
       </ul>
 
       <hr />
-      <Route path="/topics/rendering" component={Topic} />
-      <Route path="/topics/components" component={Topic} />
-      <Route path="/topics/props-v-state" component={Topic} />
+      <Route path="/topics/:topicId" component={Topic} />
     </div>
   );
 }
